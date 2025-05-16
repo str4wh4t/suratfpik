@@ -6,6 +6,7 @@ services:
     container_name: app-fpiksurat
     volumes:
       - ./laravel:/var/www/html
+    # command: chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
     networks:
       - app-bridge
 
